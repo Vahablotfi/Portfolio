@@ -16,11 +16,11 @@ import {
  const SideBar = () => {
   return (
     <div className="nav-bar">
-      <Link className="logo" to="/">
+      <Link className="logo" to="/Portfolio">
         <img src={LogoS} alt="logo" />
       </Link>
       <nav>
-        <NavLink exact="true" activeclassname="active" to="/Portfolio-app">
+        <NavLink exact="true" activeclassname="active" to="/Portfolio">
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
         <NavLink
