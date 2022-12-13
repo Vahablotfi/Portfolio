@@ -95,11 +95,10 @@ const AboutPage = () => {
                 <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://first-project-meal-sharing.herokuapp.com/"
+                  href="https://meal-sharing-hyf.up.railway.app/"
                 >
                   <button
-                    className="flat-button demo-btn"
-                    data-hover="Since Heroku stopped providing free tier, this link does not work. I am working on another solution, and will make the project live again"
+                    className="flat-button"
                   >
                     demo
                   </button>
