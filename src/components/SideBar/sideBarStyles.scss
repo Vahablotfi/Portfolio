@@ -1,3 +1,12 @@
+.navigation-bar{
+  display: block;
+width: 0%;
+height: 0px;
+
+}
+
+
+
 .nav-bar {
   background: #181818;
   width: 60px;
@@ -125,5 +134,112 @@
 
 }
 
+.burger-menu{
+  visibility: hidden;
+}
 
+.burger-nav{
+  visibility: hidden;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  .navigation-bar{
+   background: #181818;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   height: fit-content;
+ } 
+
+ .navigation-bar-hidden{
+  visibility: hidden;
+ }
+ 
+  .nav-bar {
+   width: 70%;
+   max-height: 7rem;
+  position: fixed;
+   min-height: unset;
+  padding-inline: 5rem;
+
+   .logo {
+      position: relative;
+     width: fit-content;
+     margin-top: -3rem;
+
+       img {
+        display: inline;
+        width: 9rem;
+      }
+    }
+    nav {
+      display:flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+      width: 45%;
+      height: 50%;
+      margin-left: 30%;
+    position: relative;
+    }
+
+     ul {
+    position: relative;
+    margin-left: 80%;
+    width: 20%;
+    margin-top: 2rem;
+  }
+    
+  }
+    
+
+
+
+
+  .burger-menu{
+   visibility: visible;
+   position: absolute;
+   width: 15%;
+   height: fit-content;
+   padding: 1rem;
+   z-index: 5;
+   cursor: pointer;
+  }
+  
+ .burger-nav{
+   visibility: visible;
+    width: 4em;
+    height: 0.5em;
+    margin: 9%;
+    opacity: 0.2;
+    border-radius: 0.5em;
+    border-color: #1f1f38;
+    background-color: #4db5ff;
+  }
+
+  .burger-nav.clicked:nth-child(1){
+    transform: rotate(45deg) translate(0.15em, 1.015em);
+    transition: ease-out 0.5s;
+  }
+  .burger-nav.clicked:nth-child(2){
+    transform: scale(0.01);
+    transition: ease-out 0.5s;
+  }
+  .burger-nav.clicked:nth-child(3){
+    transform: rotate(135deg) translate(-0.5em, 1.5em);
+    transition: ease-out 0.5s;
+  }
+
+  .burger-nav.unClicked{
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.5, 0.5, 0.25, 0.25) 0.5s;
+  }
+
+}
 

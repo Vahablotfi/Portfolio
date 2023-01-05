@@ -12,6 +12,7 @@
 
 
   .solid-logo {
+    
     position: absolute;
     top: auto;
     right: auto;
@@ -26,5 +27,28 @@
   stroke: #ccc;
 }
 
+
+
+@media screen and (max-width: 950px) {
+    .logo-container {
+  //  z-index: 0;
+   width: 40%;
+   position: relative;
+   left: -12rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .logo-container {
+  //  z-index: 0;
+   width: 40%;
+   position: relative;
+  //  top: -10rem;
+    // width: 400px;
+  // height: 509px;
+  }
+
+}
 
   
