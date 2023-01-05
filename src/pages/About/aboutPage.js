@@ -16,7 +16,7 @@ const AboutPage = () => {
   }, [])
   return (
     <>
-      <div className="container contact-page">
+      <div className="container about-page">
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -48,7 +48,7 @@ const AboutPage = () => {
           </h1>
         </div>
 
-        <div className="map-wrap">
+        <div className="projects-zone">
           <div className="project-1">
             <img className="gif" src={spiceShop} alt="" />
             <div class="text-container">
@@ -97,11 +97,7 @@ const AboutPage = () => {
                   rel="noreferrer"
                   href="https://meal-sharing-hyf.up.railway.app/"
                 >
-                  <button
-                    className="flat-button"
-                  >
-                    demo
-                  </button>
+                  <button className="flat-button">demo</button>
                 </a>
                 <a
                   target="_blank"
