@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
 import spiceShop from '../../assets/images/spiceShop.gif'
 import mealSharing from '../../assets/images/mealSharing.gif'
+import expenseTracker from '../../assets/images/ExpenseTracker.png'
 import AnimatedLetters from '../../components/AnimatedLetter/animatedLetters.js'
 import './aboutPageStyles.scss'
 
@@ -77,6 +78,29 @@ const AboutPage = () => {
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/HackYourFuture-CPH/fp-class20"
+                >
+                  <button className="flat-button">Source</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="project-1">
+            <img className="gif" src={expenseTracker} alt="" />
+            <div class="text-container">
+              <h4>Simple expense tracker coded with Type Script</h4>
+              <p>I made this project to practice my Type Script skills.</p>
+              <div className="source-btn">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://vahablotfi.github.io/Type-Script-expense-tracker-/"
+                >
+                  <button className="flat-button">demo</button>
+                </a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/Vahablotfi/Type-Script-expense-tracker-"
                 >
                   <button className="flat-button">Source</button>
                 </a>
