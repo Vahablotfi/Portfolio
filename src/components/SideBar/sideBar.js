@@ -29,18 +29,13 @@ const SideBar = () => {
   }
 
   return (
-    // <div className="navigation-bar">
     <div className={burgerNavActive}>
       <div className="burger-menu" onClick={burgerNavigation}>
-        {/* <span className="burger-menu-bars"></span>
-        <span className="burger-menu-bars"></span>
-        <span className="burger-menu-bars"></span> */}
         <hr className={burgerNavClass}></hr>
         <hr className={burgerNavClass}></hr>
         <hr className={burgerNavClass}></hr>
       </div>
       <div className="nav-bar">
-        {/* <div className={burgerNavActive}> */}
         <Link className="logo" to="/Portfolio">
           <img src={LogoS} alt="logo" />
         </Link>
